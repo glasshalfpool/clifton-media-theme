@@ -1,0 +1,52 @@
+.wpp-list {
+    padding-left: 0!important;    
+}
+
+.wpp-list li {
+    display: flex;
+    gap: var(--wp--custom--spacing--gap);    
+    margin-block-end: 0;
+}
+
+.wpp-list li:not(:first-of-type) {
+    margin-block-start: var(--wp--preset--spacing--small);
+}
+
+.wpp-list li .wpp-thumb-url {
+    flex-basis: 25%;
+}
+
+.wpp-list li .trending-article-text {
+    flex-basis: 75%;
+}
+
+.wpp-list h3 {
+    color: var(--wp--preset--color--contrast);
+    font-size: var(--wp--preset-cont-size--large);
+    font-weight: 700;
+    margin:0;
+}
+
+.wpp-list .wpp-thumbnail {
+    object-fit: cover;
+    height: auto;
+    max-width: 100%;
+    vertical-align: bottom;
+    width: 100%;
+}
+
+.wpp-list .trending-article-text p {
+    margin-block-start: var(--wp--preset--spacing--x-small);
+    margin-block-end: 0;
+}
+
+.wpp-list .trending-article-text p.wpp-category-text {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: var(--wp--preset--font-size--x-small);
+}
+
+.wpp-list .trending-article-text p.wpp-excerpt {
+    font-size: var(--wp--preset--font-size--x-small);
+}
+

@@ -1,0 +1,40 @@
+.type-heat-job .entry-title {
+    display: none;
+}
+
+.type-heat-job .content-wrapper{
+    border-top: 1px solid #000;
+    padding-bottom: var(--wp--preset--spacing--x-small);
+} 
+
+.type-heat-job .content-wrapper h2 {
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.job-description p {
+    font-size: 1rem;
+}
+
+.type-heat-job table, .type-heat-job td {
+    border: none!important;
+}
+
+.type-heat-job .entry-content thead th, .entry-content tr th {
+    padding: 0!important;
+}
+
+.type-heat-job .button-wrapper a {
+	border: 1px solid #000;
+	text-transform: uppercase;
+    font-size: var(--wp--preset--font-size--small);
+	transition: 0.3s;
+    padding: 0.7rem 1rem;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.type-heat-job .button-wrapper a:hover {
+	background-color: #000!important;
+    color: #fff;
+}

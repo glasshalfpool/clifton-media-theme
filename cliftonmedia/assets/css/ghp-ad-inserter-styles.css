@@ -1,0 +1,31 @@
+.ad-insert-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block-start: var(--wp--custom--spacing--gap);
+}
+
+@media (max-width: 1090px) {
+
+    .ad-insert-728x90, .ad-insert-300x250.show-on-desktop {
+        display: none;
+    }  
+
+}
+
+@media (max-width: 1400px) {
+
+    .ad-insert-970x250 {
+        display: none;
+    }  
+
+}
+
+@media (min-width: 1089px) {
+
+    .ad-insert-300x250.show-on-mobile, .ad-insert-320x50.show-on-mobile {
+        display: none;
+    }
+
+}
+

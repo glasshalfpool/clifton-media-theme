@@ -1,0 +1,291 @@
+/*
+Theme Name: Clifton Media
+Theme URI: https://cliftonmediagroup.com/
+Author: Jamie Glasspool
+Author URI: https://glasshalfpool.com/
+Description: Custom theme for Clifton Media Group websites
+Tested up to: 6.4
+Requires PHP: 7.0
+Version: 1.0.5
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: cliftonmedia
+
+Clifton Media WordPress Theme (C) Jamie Glasspool 2024.
+*/
+
+
+/* Defaults
+---------------------------------------- */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+a,
+button,
+input:focus,
+input[type="button"],
+input[type="submit"],
+textarea:focus,
+.wp-element-button {
+	transition: all 0.2s ease-in-out;
+}
+
+a,
+a:focus,
+a:hover,
+a:not(.wp-element-button) {
+	text-decoration-thickness: 1px;
+}
+
+.entry-content a {
+	color:var(--wp--preset--color--primary);
+}
+
+.entry-content a:hover {
+	color:var(--wp--preset--color--dark);
+	text-decoration: underline;
+}
+
+b,
+strong,
+th {
+	font-weight: var(--wp--custom--font-weight--medium);
+}
+
+mark {
+	background: linear-gradient(90deg, var(--wp--preset--color--primary) 0%, var(--wp--preset--color--primary) 100%);
+	background-position: 0 85%;
+	background-repeat: repeat-x;
+	background-size: 100% 15%;
+}
+
+/* -- Forms -- */
+
+input,
+select,
+textarea {
+	background-color: var(--wp--preset--color--base);
+	border: 1px solid var(--wp--preset--color--contrast);
+	border-radius: 0;
+	color: var(--wp--preset--color--contrast);
+	font-family: var(--wp--preset--font-family--primary);
+	font-size: var(--wp--preset--font-size--medium);
+	font-weight: var(--wp--custom--font-weight--light);
+	line-height: var(--wp--custom--line-height--body);
+	padding: 10px 20px;
+	width: 100%;
+}
+
+input:focus,
+textarea:focus {
+	background-color: var(--wp--preset--color--neutral);
+	outline: none;
+}
+
+input[type="checkbox"],
+input[type="image"],
+input[type="radio"] {
+	width: auto;
+}
+
+input[type="button"],
+input[type="email"],
+input[type="search"],
+input[type="submit"],
+input[type="text"],
+textarea {
+	-webkit-appearance: none;
+}
+
+::placeholder {
+	color: var(--wp--preset--color--contrast);
+	font-size: var(--wp--preset--font-size--small);
+	opacity: 0.5;
+}
+
+/* Blocks
+---------------------------------------- */
+
+/* -- Code -- */
+
+*:not(.wp-block-code) > code {
+	background-color: var(--wp--preset--color--neutral);
+	font-size: var(--wp--preset--font-size--small);
+	padding: 5px 8px;
+}
+
+/* -- Navigation -- */
+
+.wp-block-navigation__responsive-container.is-menu-open {
+	padding: var(--wp--custom--spacing--gap);
+}
+
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content {
+	padding-top: var(--wp--custom--spacing--gap);
+}
+
+.wp-block-navigation__responsive-container-close,
+.wp-block-navigation__responsive-container-open {
+	border: 1px solid currentColor;
+	padding: 2px;
+}
+
+.has-background .wp-block-navigation__responsive-container-open:focus,
+.has-background .wp-block-navigation__responsive-container-open:hover {
+	color: var(--wp--preset--color--base);
+}
+
+/* -- Navigation Submenu -- */
+
+.wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {
+	background-color: var(--wp--preset--color--contrast);
+	border: var(--wp--preset--color--contrast);
+	color: var(--wp--preset--color--base);
+	padding: 10px;
+}
+
+.wp-block-navigation :where(.wp-block-navigation__submenu-container) a {
+	padding: 2px 10px;
+}
+
+/* -- Taxonomy -- */
+
+.taxonomy-category.wp-block-post-terms {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+/* Media Queries
+---------------------------------------- */
+
+@media only screen and (max-width: 600px) {
+
+	/* -- Utility -- */
+
+	.is-style-hidden-mobile {
+		display: none !important;
+	}
+
+	.wp-block-query.query-loop-overlap-block .blog-content {
+		position: relative;
+		padding: 0;
+		padding-bottom: 2rem;
+	}
+
+}
+
+@media only screen and (max-width: 782px) {
+
+	/* -- Columns -- */
+
+	.is-style-columns-reverse {
+		flex-direction: column-reverse;
+	}
+
+
+
+}
+
+.open-offer-container {
+	max-width: var(--wp--style--global--wide-size);
+	margin: 0 auto;
+}
+
+.open-offer-container .back-prompt {
+	font-size: var(--wp--preset--font-size--small);
+}
+
+.open-offer-container h1 {
+	text-align: center;
+	color: var(--wp--preset--color--base);
+	background-color: var(--wp--preset--color--contrast);
+	padding: var(--wp--custom--spacing--gap);
+
+}
+
+@media (min-width: 800px) {
+	.investor-details-container {
+		display: flex;
+		gap: var(--wp--preset--spacing--small);
+	}
+}
+
+.investor-featured-image, .investor-details {
+	flex-basis: 33%;
+}
+
+.investor-featured-image {
+	padding: var(--wp--custom--spacing--gap);
+	background-color: var(--wp--preset--color--dark);
+}
+
+.investor-featured-image img {
+	width: 100%;
+	height: auto;
+}
+
+.investor-details ul {
+	padding: 0;
+	margin: 0;
+}
+
+.investor-details li {
+	list-style-type: none;
+	padding: 0;
+}
+
+.investor-details p {
+	margin-top: 0;	font-size: var(--wp--preset--font-size--small);
+	font-weight: bold;
+}
+
+.investor-details label {
+	text-transform: uppercase;
+	font-size: var(--wp--preset--font-size--x-small);
+}
+
+.open-offer-container .wp-block-button {
+	margin-top: var(--wp--preset--spacing--small);
+	margin-bottom: var(--wp--preset--spacing--small);
+	width: 100%;
+	text-align: center;
+}
+
+.open-offer-container .wp-block-button a {
+	margin: 0 auto;
+	display: inline-block;
+}
+
+.open-offer-container h2 {
+	text-align: center;
+}
+
+.about-fund-title {
+	max-width: var(--wp--style--global--wide-size);
+	border-bottom: 1px solid var(--wp--preset--color--contrast);
+	margin: 0 auto;
+	padding-bottom: var(--wp--custom--spacing--gap);
+}
+
+.about-the-fund {
+	display: flex;
+	max-width: var(--wp--style--global--wide-size);
+	margin: 0 auto;
+	padding-top: var(--wp--preset--spacing--small);
+}
+
+.about-the-fund .contact-fund-options {
+	flex-basis: 33%;
+}
+
+.about-the-fund .site-content {
+	flex-basis: 67%;
+}

@@ -1,0 +1,47 @@
+<!-- wp:template-part {"slug":"header","tagName":"header","className":"site-header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"0"},"padding":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|small"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group" style="margin-top:0;padding-top:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small)"><!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|medium"}}}} -->
+<div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--medium)"><!-- wp:search {"label":"Search","showLabel":false,"placeholder":"Search IFA Magazine","buttonText":"Search"} /-->
+
+<!-- wp:query-title {"type":"search","textAlign":"center","fontSize":"large"} /--></div>
+<!-- /wp:group --></main>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide"><!-- wp:columns {"metadata":{"name":"List of posts with HPU"},"align":"wide"} -->
+<div class="wp-block-columns alignwide"><!-- wp:column {"width":"75%"} -->
+<div class="wp-block-column" style="flex-basis:75%"><!-- wp:query {"queryId":7,"query":{"perPage":10,"pages":0,"offset":"7","postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true,"taxQuery":null,"parents":[]},"className":"alignwide"} -->
+<div class="wp-block-query alignwide"><!-- wp:post-template {"className":"related","style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default","columnCount":3}} -->
+<!-- wp:columns {"isStackedOnMobile":false} -->
+<div class="wp-block-columns is-not-stacked-on-mobile"><!-- wp:column {"width":"25%"} -->
+<div class="wp-block-column" style="flex-basis:25%"><!-- wp:post-featured-image {"isLink":true,"aspectRatio":"16/9"} /--></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"75%","style":{"spacing":{"blockGap":"var:preset|spacing|x-small"}}} -->
+<div class="wp-block-column" style="flex-basis:75%"><!-- wp:post-title {"isLink":true,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"large"} /-->
+
+<!-- wp:post-excerpt {"showMoreOnNewLine":false,"excerptLength":22,"fontSize":"x-small"} /-->
+
+<!-- wp:post-terms {"term":"category","fontSize":"x-small"} /--></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+<!-- /wp:post-template -->
+
+<!-- wp:query-pagination -->
+<!-- wp:query-pagination-previous /-->
+
+<!-- wp:query-pagination-numbers /-->
+
+<!-- wp:query-pagination-next /-->
+<!-- /wp:query-pagination --></div>
+<!-- /wp:query --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"25%","className":"min-width-300px","style":{"spacing":{"blockGap":"0","padding":{"right":"0","left":"0"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-column min-width-300px" style="padding-right:0;padding-left:0;flex-basis:25%"><!-- wp:block {"ref":473687} /--></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer","className":"site-footer"} /-->

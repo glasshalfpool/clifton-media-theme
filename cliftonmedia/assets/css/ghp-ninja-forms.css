@@ -1,0 +1,30 @@
+/* Ninja Forms Visibility */
+/* ---------------------- */
+
+/* -- For some reason this is required to hide the required message when not logged in -- */
+.nf-form-fields-required, .nf-field-label, .nf-form-hp {
+	display: none;
+}
+
+.nf-field {
+    margin-top: 1rem;
+}
+
+.nf-form-content input[type=submit] {
+	border: 1px solid var(--wp--preset--color--contrast);
+    background-color: var(--wp--preset--color--contrast);
+	text-transform: uppercase;
+    font-size: var(--wp--preset--font-size--small);
+	transition: 0.3s;
+    padding: 0.7rem 1rem;
+    margin-top: 1rem;
+    display: inline-block;
+    color: #fff;
+    max-width: 200px;
+}
+
+.nf-form-content input[type=submit]:hover {
+	background-color: var(--wp--preset--color--primary)!important;
+    border: 1px solid var(--wp--preset--color--primary);
+    cursor: pointer;
+}
