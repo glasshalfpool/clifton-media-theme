@@ -1,5 +1,5 @@
-=== Frost ===
-Contributors: wpengine, bgardner
+=== Clifton Media - Adapted from Frost ===
+Contributors: Jamie Glasspool, wpengine, bgardner
 Requires at least: 6.4
 Tested up to: 6.4
 Requires PHP: 7.0
