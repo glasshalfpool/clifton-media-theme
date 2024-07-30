@@ -408,7 +408,26 @@
 				}
 			},
 			"core/paragraph": {
-				"css": ".has-background {padding: 20px 30px;}"
+				"css": ".has-background {padding: 20px 30px;}",
+				"elements": {
+					"link": {
+						"typography": {
+							"textDecoration": "none"
+						},
+						"color": {
+							"text": "var(--wp--preset--color--primary)"
+						},
+						":hover": {
+							"color": {
+								"text": "var(--wp--preset--color--secondary)"
+							},
+							"typography": {
+								"textDecoration": "underline"
+							}
+						}
+
+					}
+				}
 			},
 			"core/post-comments-form": {
 				"css": "& input[type=submit] {width: auto;} & label {font-size: var(--wp--preset--font-size--x-small);}"

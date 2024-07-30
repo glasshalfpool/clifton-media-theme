@@ -45,15 +45,6 @@ a:not(.wp-element-button) {
 	text-decoration-thickness: 1px;
 }
 
-.entry-content a {
-	color:var(--wp--preset--color--primary);
-}
-
-.entry-content a:hover {
-	color:var(--wp--preset--color--dark);
-	text-decoration: underline;
-}
-
 b,
 strong,
 th {
@@ -161,6 +152,17 @@ textarea {
 .taxonomy-category.wp-block-post-terms {
 	text-transform: uppercase;
 	letter-spacing: 1px;
+}
+
+/* -- Links in articles: Catch all blocks (would be better in theme.json) -- */
+
+article a {
+	color:var(--wp--preset--color--primary);
+}
+
+article a:hover {
+	color:var(--wp--preset--color--dark);
+	text-decoration: underline;
 }
 
 /* Media Queries
