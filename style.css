@@ -291,3 +291,13 @@ article a:hover {
 .about-the-fund .site-content {
 	flex-basis: 67%;
 }
+
+/* Hide Sticky Footer container by default */
+.sticky-footer-container {
+	display: none;
+}
+
+/* Show Sticky Footer container on posts, open offers, etc. */
+.single .sticky-footer-container {
+	display: block;
+}
