@@ -227,11 +227,13 @@ article a:hover {
 .investor-featured-image {
 	padding: var(--wp--custom--spacing--gap);
 	background-color: var(--wp--preset--color--dark);
+	display: flex;
 }
 
 .investor-featured-image img {
 	width: 100%;
 	height: auto;
+	object-fit: contain;
 }
 
 .investor-details ul {
