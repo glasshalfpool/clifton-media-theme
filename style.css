@@ -303,3 +303,24 @@ article a:hover {
 .single .sticky-footer-container {
 	display: block;
 }
+
+@media (max-width: 800px) {
+
+	.single .sticky-footer-container {
+		padding-top: 2rem;
+	}
+}
+
+/* Cover image Query Loop blocks */
+
+@media (min-width: 781px) {
+
+	.query-loop-cover-image figure {
+		aspect-ratio: 7/6.56!important;
+	}
+
+	.query-loop-cover-image-large figure {
+		aspect-ratio: 8/5!important;
+	} 
+
+}
