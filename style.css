@@ -304,13 +304,6 @@ article a:hover {
 	display: block;
 }
 
-@media (max-width: 800px) {
-
-	.single .sticky-footer-container {
-		padding-top: 2rem;
-	}
-}
-
 /* Cover image Query Loop blocks */
 
 @media (min-width: 781px) {

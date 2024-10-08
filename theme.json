@@ -516,6 +516,9 @@
 				},
 				"css": ":not(.is-style-wide):not(.is-style-dots) {width: 100px;}"
 			},
+			"core/site-logo": {
+				"css": ".mvpro-logo .custom-logo-link .custom-logo {width: clamp(8rem, 3rem + 13.333vw, 15rem)!important;}"
+			},
 			"core/site-title": {
 				"elements": {
 					"link": {
