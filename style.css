@@ -150,7 +150,7 @@ textarea {
 /* -- Taxonomy -- */
 
 .taxonomy-category.wp-block-post-terms {
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	letter-spacing: 1px;
 }
 
@@ -316,4 +316,10 @@ article a:hover {
 		aspect-ratio: 8/5!important;
 	} 
 
+}
+
+/* Remove padding from search button - doesn't seem possible in theme.json */
+
+.wp-block-search__button {
+	padding: 0;
 }

@@ -50,7 +50,7 @@
 						}
 					]
 				}
-			}
+			}			
 		},
 		"color": {
 			"defaultDuotone": false,
@@ -200,6 +200,11 @@
 					"fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
 					"name": "Humanist",
 					"slug": "primary"
+				},
+				{
+					"fontFamily": "Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;",
+					"name": "Transitional",
+					"slug": "serif"
 				}
 			],
 			"fontSizes": [
@@ -437,6 +442,11 @@
 					"blockGap": "var(--wp--preset--spacing--medium);"
 				}
 			},
+			"core/post-terms": {
+				"typography": {
+					"textTransform": "uppercase"
+				}
+			},
 			"core/preformatted": {
 				"color": {
 					"background": "var(--wp--preset--color--contrast)",
@@ -517,7 +527,7 @@
 				"css": ":not(.is-style-wide):not(.is-style-dots) {width: 100px;}"
 			},
 			"core/site-logo": {
-				"css": ".mvpro-logo .custom-logo-link .custom-logo {width: clamp(8rem, 3rem + 13.333vw, 15rem)!important;}"
+				"css": ".mvpro-logo .custom-logo-link .custom-logo {width: clamp(8rem, 3rem + 13.333vw, 15rem)!important;} &.wealthdfm-logo .custom-logo-link .custom-logo {width: clamp(6.25rem, 2.864rem + 11.287vw, 12.5rem)!important;}"
 			},
 			"core/site-title": {
 				"elements": {

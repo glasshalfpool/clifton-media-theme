@@ -1,8 +1,8 @@
 {
-	"version": 2,
+	"version": 3,
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
-	"title": "Graphite",
-	"description":  "Graphite-based palette with two shades",
+	"title": "Wealth DFM",
+	"description":  "Colour scheme and fonts for Wealth DFM",
 	"settings": {
 		"color": {
 			"duotone": [
@@ -18,8 +18,8 @@
 				},
 				{
 					"colors": [ "#3d3d3d", "#ffffff" ],
-					"name": "Secondary and White",
-					"slug": "secondary-and-white"
+					"name": "Dark and White",
+					"slug": "dark-and-white"
 				}
 			],
 			"palette": [
@@ -34,21 +34,31 @@
 					"slug": "contrast"
 				},
 				{
-					"color": "#666666",
+					"color": "#198ace",
 					"name": "Primary",
 					"slug": "primary"
 				},
 				{
-					"color": "#3d3d3d",
-					"name": "Secondary",
-					"slug": "secondary"
-				},
-				{
-					"color": "#eeeeee",
-					"name": "Neutral",
-					"slug": "neutral"
+					"color": "#4e5665",
+					"name": "Dark",
+					"slug": "dark"
 				}
 			]
+		}
+	},
+	"styles": {
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--serif)",
+			"fontSize": "var(--wp--preset--font-size--medium)",
+			"fontWeight": "var(--wp--custom--font-weight--light)",
+			"lineHeight": "var(--wp--custom--line-height--body)"
+		},
+		"blocks": {
+			"core/post-terms": {
+				"typography": {
+					"textTransform": "none"
+				}
+			}
 		}
 	}
 }
