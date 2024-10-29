@@ -527,7 +527,7 @@
 				"css": ":not(.is-style-wide):not(.is-style-dots) {width: 100px;}"
 			},
 			"core/site-logo": {
-				"css": ".mvpro-logo .custom-logo-link .custom-logo {width: clamp(8rem, 3rem + 13.333vw, 15rem)!important;} &.wealthdfm-logo .custom-logo-link .custom-logo {width: clamp(6.25rem, 2.864rem + 11.287vw, 12.5rem)!important;}"
+				"css": ".ifa-logo .custom-logo-link .custom-logo {width: clamp(4.063rem, 2.349rem + 4.569vw, 6.25rem)!important} &.mvpro-logo .custom-logo-link .custom-logo {width: clamp(8rem, 3rem + 13.333vw, 15rem)!important;} &.wealthdfm-logo .custom-logo-link .custom-logo {width: clamp(6.25rem, 2.864rem + 11.287vw, 12.5rem)!important;}"
 			},
 			"core/site-title": {
 				"elements": {
