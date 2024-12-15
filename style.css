@@ -6,7 +6,7 @@ Author URI: https://glasshalfpool.com/
 Description: Custom theme for Clifton Media Group websites
 Tested up to: 6.6
 Requires PHP: 7.0
-Version: 1.1.1
+Version: 1.1.2
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: cliftonmedia
@@ -323,3 +323,9 @@ article a:hover {
 .wp-block-search__button {
 	padding: 0;
 }
+
+/* GDPR Cookie Compliance plugin - Hide Enabled buttons due to no functionality in changing them */
+
+.moove-gdpr-status-bar {
+	display: none;
+  }
